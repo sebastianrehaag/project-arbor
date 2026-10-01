@@ -93,25 +93,6 @@ footer {
   transform: rotate(42deg) translate(-6px, -1px);
 }
 
-.status {
-  display: flex;
-  gap: 9px;
-  align-items: center;
-  margin: 0;
-  color: var(--muted);
-  font-size: 0.8rem;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-}
-
-.status span {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: var(--accent);
-  box-shadow: 0 0 18px rgba(159, 224, 181, 0.7);
-}
-
 .hero {
   display: grid;
   min-height: 650px;
@@ -241,10 +222,6 @@ footer a:focus-visible {
 
   .masthead {
     min-height: 84px;
-  }
-
-  .status {
-    font-size: 0.68rem;
   }
 
   .hero {
