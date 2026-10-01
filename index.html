@@ -5,20 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Project Arbor is building the operating system for AI-native organizations."
+      content="Project Arbor is building Workforce OS—the control plane for intelligent organizations."
     />
     <meta name="theme-color" content="#0b110e" />
     <meta property="og:title" content="Project Arbor" />
     <meta
       property="og:description"
-      content="Building the operating system for AI-native organizations."
+      content="Organizations are becoming intelligent. Their operating systems should too."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://projectarbor.ca/" />
-    <title>Project Arbor — The operating system for AI-native organizations</title>
+    <title>Project Arbor — The control plane for intelligent organizations</title>
     <link rel="canonical" href="https://projectarbor.ca/" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=20261001" />
   </head>
   <body>
     <main>
@@ -33,12 +33,111 @@
 
       <section class="hero" id="top">
         <p class="eyebrow">Workforce OS</p>
-        <h1>Building the operating system for AI-native organizations.</h1>
+        <h1>Organizations are becoming intelligent. Their operating systems should too.</h1>
         <p class="intro">
-          Project Arbor is developing the control plane for organizations where
-          humans and AI agents work together across models, tools, and computing
-          environments.
+          Project Arbor is building the control plane that coordinates people,
+          agents, models, tools, and compute as one adaptive workforce.
         </p>
+      </section>
+
+      <section class="problem" aria-labelledby="problem-heading">
+        <div class="problem-copy">
+          <p class="eyebrow">The coordination gap</p>
+          <h2 id="problem-heading">AI is multiplying inside organizations. Coordination isn’t.</h2>
+          <p class="body-copy">
+            Every model, agent, and tool arrives with its own context,
+            permissions, and workflow. Workforce OS turns that fragmentation
+            into one coherent system.
+          </p>
+        </div>
+
+        <div
+          class="control-plane"
+          role="img"
+          aria-label="Workforce OS coordinates people, agents, models, tools, and compute into governed execution and observable outcomes."
+        >
+          <div class="visual-kicker" aria-hidden="true">
+            <span>Live orchestration</span>
+            <span class="status"><i></i> System online</span>
+          </div>
+          <svg class="network" viewBox="0 0 760 460" aria-hidden="true">
+            <defs>
+              <linearGradient id="rail" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0" stop-color="#9fe0b5" stop-opacity=".1" />
+                <stop offset=".5" stop-color="#9fe0b5" stop-opacity=".8" />
+                <stop offset="1" stop-color="#9fe0b5" stop-opacity=".1" />
+              </linearGradient>
+              <radialGradient id="coreGlow">
+                <stop offset="0" stop-color="#9fe0b5" stop-opacity=".23" />
+                <stop offset="1" stop-color="#9fe0b5" stop-opacity="0" />
+              </radialGradient>
+              <filter id="softGlow" x="-100%" y="-100%" width="300%" height="300%">
+                <feGaussianBlur stdDeviation="4" result="blur" />
+                <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
+              </filter>
+            </defs>
+
+            <circle class="core-glow" cx="380" cy="230" r="160" fill="url(#coreGlow)" />
+            <g class="rails">
+              <path d="M160 100 C250 100 260 184 322 206" />
+              <path d="M160 185 C250 185 270 210 322 220" />
+              <path d="M160 270 C250 270 270 246 322 236" />
+              <path d="M160 355 C250 355 260 276 322 252" />
+              <path d="M438 214 C510 190 520 142 600 142" />
+              <path d="M438 230 C520 230 540 230 600 230" />
+              <path d="M438 246 C510 270 520 318 600 318" />
+            </g>
+            <g class="signals" filter="url(#softGlow)">
+              <path style="--delay: 0s" d="M160 100 C250 100 260 184 322 206" />
+              <path style="--delay: -1.4s" d="M160 185 C250 185 270 210 322 220" />
+              <path style="--delay: -2.6s" d="M160 270 C250 270 270 246 322 236" />
+              <path style="--delay: -.7s" d="M160 355 C250 355 260 276 322 252" />
+              <path style="--delay: -2.1s" d="M438 214 C510 190 520 142 600 142" />
+              <path style="--delay: -.9s" d="M438 230 C520 230 540 230 600 230" />
+              <path style="--delay: -3.1s" d="M438 246 C510 270 520 318 600 318" />
+            </g>
+
+            <g class="node input-node" transform="translate(32 74)">
+              <rect width="128" height="52" rx="12" />
+              <circle cx="22" cy="26" r="4" /><text x="38" y="31">People</text>
+            </g>
+            <g class="node input-node" transform="translate(32 159)">
+              <rect width="128" height="52" rx="12" />
+              <circle cx="22" cy="26" r="4" /><text x="38" y="31">Agents</text>
+            </g>
+            <g class="node input-node" transform="translate(32 244)">
+              <rect width="128" height="52" rx="12" />
+              <circle cx="22" cy="26" r="4" /><text x="38" y="31">Models</text>
+            </g>
+            <g class="node input-node" transform="translate(32 329)">
+              <rect width="128" height="52" rx="12" />
+              <circle cx="22" cy="26" r="4" /><text x="38" y="31">Tools + compute</text>
+            </g>
+
+            <g class="core" transform="translate(322 172)">
+              <rect width="116" height="116" rx="25" />
+              <circle class="core-ring" cx="58" cy="58" r="31" />
+              <path d="M44 67 L58 44 L72 67 M50 58 H66" />
+            </g>
+            <text class="core-label" x="380" y="315" text-anchor="middle">WORKFORCE OS</text>
+
+            <g class="node output-node" transform="translate(600 116)">
+              <rect width="128" height="52" rx="12" />
+              <text x="64" y="31" text-anchor="middle">Governed</text>
+            </g>
+            <g class="node output-node" transform="translate(600 204)">
+              <rect width="128" height="52" rx="12" />
+              <text x="64" y="31" text-anchor="middle">Adaptive</text>
+            </g>
+            <g class="node output-node" transform="translate(600 292)">
+              <rect width="128" height="52" rx="12" />
+              <text x="64" y="31" text-anchor="middle">Observable</text>
+            </g>
+          </svg>
+          <div class="visual-footer" aria-hidden="true">
+            <span>Intent</span><i></i><span>Orchestration</span><i></i><span>Outcome</span>
+          </div>
+        </div>
       </section>
 
       <section class="system" aria-labelledby="system-heading">
@@ -65,14 +164,64 @@
           </article>
         </div>
       </section>
+
+      <section class="signup" aria-labelledby="signup-heading">
+        <div class="signup-copy">
+          <p class="eyebrow">Private preview</p>
+          <h2 id="signup-heading">Stay close to the build.</h2>
+          <p class="body-copy">Occasional notes on what we’re building, learning, and shipping.</p>
+        </div>
+        <form
+          class="signup-form"
+          action="https://docs.google.com/forms/d/e/1FAIpQLSfolEB1UWzzKq7ob17MR9rmPeXd6A3k-eKXCJCrGHAJKEDHog/formResponse"
+          method="post"
+          target="signup-target"
+          data-signup-form
+        >
+          <label class="sr-only" for="signup-email">Email address</label>
+          <div class="signup-controls">
+            <input
+              id="signup-email"
+              name="entry.1325226006"
+              type="email"
+              autocomplete="email"
+              inputmode="email"
+              placeholder="you@company.com"
+              required
+            />
+            <button type="submit">Join the list</button>
+          </div>
+          <p class="form-note">Occasional updates. No noise.</p>
+          <p class="form-status" data-form-status role="status" aria-live="polite"></p>
+        </form>
+        <iframe class="signup-target" name="signup-target" title="Signup response"></iframe>
+      </section>
     </main>
 
     <footer>
-      <p>
-        Private development ·
-        <a href="mailto:seb@projectarbor.ca">seb@projectarbor.ca</a>
-      </p>
+      <p>Private development · seb@projectarbor.ca</p>
       <p>© 2026 Project Arbor</p>
     </footer>
+
+    <script>
+      const signupForm = document.querySelector("[data-signup-form]");
+      const signupFrame = document.querySelector(".signup-target");
+      const signupStatus = document.querySelector("[data-form-status]");
+      let signupSubmitted = false;
+
+      signupForm.addEventListener("submit", () => {
+        signupSubmitted = true;
+        signupStatus.textContent = "Adding you…";
+        signupForm.classList.add("is-submitting");
+      });
+
+      signupFrame.addEventListener("load", () => {
+        if (!signupSubmitted) return;
+        signupForm.reset();
+        signupForm.classList.remove("is-submitting");
+        signupForm.classList.add("is-complete");
+        signupStatus.textContent = "You’re on the list.";
+      });
+    </script>
   </body>
 </html>
