@@ -221,6 +221,18 @@ footer p {
   margin: 0;
 }
 
+footer a {
+  color: inherit;
+  text-decoration-color: rgba(159, 224, 181, 0.55);
+  text-underline-offset: 0.24em;
+  transition: color 160ms ease;
+}
+
+footer a:hover,
+footer a:focus-visible {
+  color: var(--accent);
+}
+
 @media (max-width: 760px) {
   main,
   footer {
